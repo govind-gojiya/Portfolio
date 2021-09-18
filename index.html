@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Info Page | Govind Gojiya</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <nav class="navbar" id="navBar">
+        <h2>Govind Gojiya</h2>
+        <ul>
+            <li>
+                <a href="home" class="active">Home</a>
+            </li>
+            <li><a href="about">About</a></li>
+            <li><a href="servies">Servies</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="feedback">Feedback</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="menu" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <nav class="phonenav" id="phoneNav">
+        <ul>
+            <li>
+                <a href="home" class="active">Home</a>
+            </li>
+            <li><a href="about">About</a></li>
+            <li><a href="servies">Servies</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="feedback">Feedback</a></li>
+        </ul>
+    </nav>
+    <main>
+        <center>
+            <h3 style="margin-bottom: 1rem">
+                This is a <b>first</b> HTML Page created by me
+            </h3>
+        </center>
+        <h3><b>Favourite Foods</b></h3>
+        <ul>
+            <li>Apples</li>
+            <li>Mangoes</li>
+            <li>Oranges</li>
+            <li>Pizza</li>
+            <li>Chocolates</li>
+        </ul>
+        <br />
+        <h3><b>Achievments</b></h3>
+        <p class="progrossebar">
+            Progress in the HTML <progress value="100" max="100"></progress> (100%)
+        </p>
+        <p class="progrossebar">
+            Progress in the CSS <progress value="20" max="100"></progress> (20%)
+        </p>
+        <p class="progrossebar">
+            Progress in Life Goals <progress value="40" max="100"></progress> (40%)
+        </p>
+        <br />
+        <h3><b>More about me</b></h3>
+        <details>
+            <summary>My Childhood</summary>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, cupiditate. Magnam quam saepe qui odit, suscipit excepturi beatae perspiciatis placeat.
+            </p>
+        </details>
+    </main>
+
+    <footer class="footer">
+        <p>&copy;Copyright Govind Gojiya</p>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("phoneNav");
+            if (x.className === "phonenav") {
+                x.className += " responsive";
+            } else {
+                x.className = "phonenav";
+            }
+        }
+    </script>
+</body>
+
+</html>
